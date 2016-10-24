@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Нёрдс</title>
+</head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<div class="logo">
+				<img src="nerds.png" width="170px" height="70px" alt="Nerds">
+			</div>
+			<nav class="main-menu">
+				<ul>
+					<li>
+						<a href="#">Студия</a>
+					</li>
+					<li>
+						<a href="#">Клиенты</a>
+					</li>
+					<li>
+						<a href="#">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="basket">
+				<a href="#">Корзина</a>
+			</div>
+			<h1>Магазин готовых шаблонов</h1>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="column-left">
+				<form action="#" method="post">
+					<fieldset>
+						<legend>Стоимость:</legend>
+						<input type="range" multiple name="price" min="0" max="15000" step="1,15000" value="0">
+						<label>ОТ </label><input type="text" name="min-price"> <label> ДО </label><input type="text" name="max-price">
+					</fieldset>
+					<fieldset>
+						<legend>Сетка:</legend>
+						<input type="radio" name="grid" value="adaptive" id="adaptive" checked>
+						<label for="adaptive">Адаптивный</label>
+						<input type="radio" name="grid" value="fixed" id="fixed">
+						<label for="fixed">Фиксированная</label>
+						<input type="radio" name="grid" value="rubber" id="rubber">
+						<label for="rubber">Резиновая</label>
+					</fieldset>
+					<fieldset>
+						<legend>Особенности:</legend>
+						<input type="checkbox" name="slider" id="slider" checked>
+							<label for="slider"> Слайдер</label>
+						<input type="checkbox" name="block" id="block">
+							<label for="block"> Блок преимущество</label>
+						<input type="checkbox" name="news" id="news" checked>
+							<label for="news"> Новости</label>
+						<input type="checkbox" name="gallery" id="gallery">
+							<label for="gallery"> Галерея</label>
+						<input type="checkbox" name="basket" id="basket">
+							<label for="basket"> Корзина</label>
+					</fieldset>
+					<button type="submit">Показать</button>
+				</form>
+			</div>
+			<div class="column-right">
+				<div class="sort">
+					<b>Сортировать:</b>
+					<button type="button">По цене</button>
+					<button type="button">По типу</button>
+					<button type="button">По названию</button>
+					<button type="button">max</button>
+					<button type="button">min</button>
+				</div>
+				<div class="cards">
+					<div class="card">
+						<img src="browser.png" width="360px" height="40px" alt="браузер">
+						<img src="sedona.png" width="358px" height="568px" alt="Sedona">
+						<div class="description">
+							<b>Sedona</b>
+							<p>Информацинный сайт для туристов</p>
+							<a class="btn" href="#">9900 руб.</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="browser.png" width="360px" height="40px" alt="браузер">
+						<img src="pink.png" width="358px" height="568px" alt="Pink">
+						<div class="description">
+							<b>Pink APP</b>
+							<p>Продуктовый лендинг приложения для iOS и Android</p>
+							<a class="btn" href="#">9900 руб.</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="browser.png" width="360px" height="40px" alt="браузер">
+						<img src="barbershop.png" width="358px" height="568px" alt="Barbershop">
+						<div class="description">
+							<b>Barbershop</b>
+							<p>Сайт салоны красоты. Для мужчин, да.</p>
+							<a class="btn" href="#">9900 руб.</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="browser.png" width="360px" height="40px" alt="браузер">
+						<img src="mishka.png" width="358px" height="568px" alt="Mishka">
+						<div class="description">
+							<b>Mishka</b>
+							<p>Интернет-магазин вязаных игрушек</p>
+							<a class="btn" href="#">9900 руб.</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="browser.png" width="360px" height="40px" alt="браузер">
+						<img src="aplus.png" width="358px" height="568px" alt="A PLUS HOVER">
+						<div class="description">
+							<b>A PLUS</b>
+							<p>Лендинг курсов повышения квалификации</p>
+							<a class="btn" href="#">9900 руб.</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="browser.png" width="360px" height="40px" alt="браузер">
+						<img src="kvast.png" width="358px" height="568px" alt="КВАСТ">
+						<div class="description">
+							<b>КВАСТ</b>
+							<p>Промо-сайт производителя крафтового кваса</p>
+							<a class="btn" href="#">9900 руб.</a>
+						</div>
+					</div>
+				</div>
+				<div class="pages">
+					<a class="page-btn" href="#">1</a>
+					<a class="page-btn" href="#">2</a>
+					<a class="page-btn" href="#">3</a>
+					<a class="page-btn" href="#">Следующая</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="main-footer">
+		<div class="container">
+			<div class="adress">
+				<img src="map.png" width="1440px" height="400px" alt="карта">
+				<img src="mark.png" width="190px" height="150px" alt="метка">
+				<div class="write-us">
+					<b>NËRDS DESIGN STUDIO</b>
+					<p>191186, Санкт-Петербург,<br>
+						ул. Б.Конюенная, д. 19/8</p>
+					<p>тел. +7 (812) 275-75-75</p>
+					<a class="btn" href="#">НАПИШИТЕ НАМ</a>
+				</div>
+			</div>
+			<div class="social">
+				<div class="social-btn">
+					<a class="social-vk" href="#">Вконтакте</a>
+					<a class="social-fb" href="#">Facebook</a>
+					<a class="social-in" href="#">Instagram</a>
+				</div>
+				<b>Давайте дружить, это выгодно!</b>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
