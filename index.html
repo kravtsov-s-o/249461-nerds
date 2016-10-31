@@ -3,13 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>Нёрдс</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
-		<div class="container">
+		<div class="container clearfix">
 			<div class="logo">
-				<img src="img/nerds-logo.png" width="160px" height="65px" alt="Nerds">
+				<a href="#"><img src="img/nerds-logo.png" width="160px" height="65px" alt="Nerds"></a>
 			</div>
 			<nav class="main-menu">
 				<ul>
@@ -30,43 +31,78 @@
 			<div class="basket">
 				<a href="#">Корзина</a>
 			</div>
-			<div class="rotor">
-				<div class="slid">
-					<input type="radio" name="slid_1" id="slider1_1">
-					<label for="slider1_1"></label>
-					<h2>Долго, дорого, скрупулезно.</h2>
-					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-					<a class="btn" href="#">Узнать больше</a>
-					<img src="img/slider-1.jpg" width="760px" height="431px" alt="Мобильник">
+			<div class="slider">
+				<input type="radio" id="btn-1" name="nerds1" checked>
+                <input type="radio" id="btn-2" name="nerds1">
+                <input type="radio" id="btn-3" name="nerds1">
+				<div class="slider-controls">
+					<label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
+				</div>
+				<div class="slider-inner">
+					<div class="slider-slides">
+						<div class="slide1">
+							<div class="column-left">
+							<b>Долго, дорого, скрупулезно.</b>
+							<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+							<a class="btn" href="#">Узнать больше</a>
+							</div>
+							<div class="column-right">
+							<img src="img/slider-1.jpg" width="760px" height="431px" alt="Мобильник">
+							</div>
+						</div>
+						<div class="slide1">
+							<div class="column-left">
+							<b>Любим математику как никто другой</b>
+							<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+							<a class="btn" href="#">Узнать больше</a>
+							</div>
+							<div class="column-right">
+							<img src="img/slider-2.jpg" width="760px" height="431px" alt="Мобильник">
+							</div>
+						</div>
+						<div class="slide1">
+							<div class="column-left">
+							<b>Только ночь, только хардкор</b>
+							<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+							<a class="btn" href="#">Узнать больше</a>
+							</div>
+							<div class="column-right">
+							<img src="img/slider-3.jpg" width="760px" height="431px" alt="Мобильник">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 	<main>
 		<div class="container">
-			<div class="services">
+			<div class="services clearfix">
 				<div class="site">
 					<img src="img/site.jpg" width="300px" height="146px" alt="ноутбук">
-					<b>Веб-сайты</b>
+					<h2>Веб-сайты</h2>
 					<p>Мир никогда не будет прежним после того как увидит ващ сайт!</p>
 					<a class="btn" href="#">Заказать</a>
 				</div>
 				<div class="application">
 					<img src="img/store.jpg" width="300px" height="146px" alt="мобильники">
-					<b>Приложения</b>
+					<h2>Приложения</h2>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 					<a class="btn" href="#">Заказать</a>
 				</div>
 				<div class="presentation">
 					<img src="img/screen.jpg" width="300px" height="146px" alt="Презентационный экран">
-					<b>Презентация</b>
+					<h2>Презентация</h2>
 					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 					<a class="btn" href="#">Заказать</a>
 				</div>
 			</div>
-			<div class="about-us">
+			<div class="line"></div><!--как иначе не придумал пока-->
+			<div class="about-us clearfix">
 				<div class="column-left">
-					<h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+					<b class="capiton">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 					<b>Выполняем заказы на разработку:</b>
 					<ul>
@@ -85,20 +121,22 @@
 					<div class="percent-description">Соблюдение сроков</div>
 					<div class="percent-description">Минимальная предоплата</div>
 				</div>
-				<table>
 			</div>
+			<div class="line"></div><!--как иначе не придумал пока-->
 			<div class="clients">
 				<a href="#"><img src="img/htmlacademy-logo.png" width="199px" height="68px" alt="html academy"></a>
 				<a href="#"><img src="img/borodinsky-logo.png" width="209px" height="87px" alt="Barbershop Borodinski"></a>
 				<a href="#"><img src="img/pink-logo.png" width="185px" height="52px" alt="pink"></a>
 				<a href="#"><img src="img/mishka-logo.png" width="173px" height="84px" alt="mishka"></a>
 			</div>
+			<div class="line"></div><!--как иначе не придумал пока-->
 		</div>
 	</main>
 	<footer class="main-footer">
 		<div class="container">
 			<div class="adress">
-				<img src="img/map.jpg" width="1440px" height="400px" alt="карта">
+				<img src="img/map.jpg" class="map" width="1440px" height="400px" alt="карта">
+				<img src="img/map-marker.png" class="mark" width="231px" height="190px" alt="метка">
 				<div class="write-us">
 					<b>NËRDS DESIGN STUDIO</b>
 					<p>191186, Санкт-Петербург,<br>
@@ -107,14 +145,16 @@
 					<a class="btn" href="#">НАПИШИТЕ НАМ</a>
 				</div>
 			</div>
-			<div class="social">
+			<div class="social clearfix">
 				<div class="social-btn">
 					<a class="social-vk" href="#">Вконтакте</a>
 					<a class="social-fb" href="#">Facebook</a>
 					<a class="social-in" href="#">Instagram</a>
 				</div>
-				<b>Давайте дружить, это выгодно!</b>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
+				<div class="friends">
+					<b>Давайте дружить, это выгодно!</b>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+				</div>
 			</div>
 		</div>
 	</footer>

@@ -2,12 +2,13 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Нёрдс</title>
 </head>
 <body>
 	<header class="main-header">
-		<div class="container">
+		<div class="container clearfix">
 			<div class="logo">
 				<img src="img/nerds-logo.png" width="160px" height="65px" alt="Nerds">
 			</div>
@@ -30,51 +31,52 @@
 			<div class="basket">
 				<a href="#">Корзина</a>
 			</div>
-			<h1>Магазин готовых шаблонов</h1>
+			<div class="name-page">
+				<h1>Магазин готовых шаблонов</h1>
+			</div>
 		</div>
 	</header>
 	<main>
-		<div class="container">
+		<div class="container clearfix">
 			<div class="column-left">
 				<form action="#" method="post">
 					<fieldset>
 						<legend>Стоимость:</legend>
-						<input type="range" multiple name="price" min="0" max="15000" step="1,15000" value="0">
-						<label>ОТ </label><input type="text" name="min-price"> <label> ДО </label><input type="text" name="max-price">
+						<input type="range" multiple name="price" min="0" max="15000" step="1,15000" value="0"><br>
+						<label for="min-price">ОТ </label><input type="text" name="min-price" id="min-price" value="0">
+						<label for="max-price"> ДО </label><input type="text" name="max-price" id="max-price" value="15000">
 					</fieldset>
 					<fieldset>
 						<legend>Сетка:</legend>
-						<input type="radio" name="grid" value="adaptive" id="adaptive" checked>
-						<label for="adaptive">Адаптивный</label>
-						<input type="radio" name="grid" value="fixed" id="fixed">
-						<label for="fixed">Фиксированная</label>
-						<input type="radio" name="grid" value="rubber" id="rubber">
-						<label for="rubber">Резиновая</label>
+						<ul>
+							<li><input type="radio" name="grid" value="adaptive" id="adaptive" checked> <label for="adaptive">Адаптивный</label></li>
+							<li><input type="radio" name="grid" value="fixed" id="fixed"> <label for="fixed">Фиксированная</label></li>
+							<li><input type="radio" name="grid" value="rubber" id="rubber"> <label for="rubber">Резиновая</label></li>
+						</ul>
 					</fieldset>
 					<fieldset>
 						<legend>Особенности:</legend>
-						<input type="checkbox" name="slider" id="slider" checked>
-							<label for="slider"> Слайдер</label>
-						<input type="checkbox" name="block" id="block">
-							<label for="block"> Блок преимущество</label>
-						<input type="checkbox" name="news" id="news" checked>
-							<label for="news"> Новости</label>
-						<input type="checkbox" name="gallery" id="gallery">
-							<label for="gallery"> Галерея</label>
-						<input type="checkbox" name="basket" id="basket">
-							<label for="basket"> Корзина</label>
+						<ul>
+							<li><input type="checkbox" name="slider" id="slider" checked> <label for="slider"> Слайдер</label></li>
+							<li><input type="checkbox" name="block" id="block"> <label for="block"> Блок преимущество</label></li>
+							<li><input type="checkbox" name="news" id="news" checked> <label for="news"> Новости</label></li>
+							<li><input type="checkbox" name="gallery" id="gallery"> <label for="gallery"> Галерея</label></li>
+							<li><input type="checkbox" name="basket" id="basket"> <label for="basket"> Корзина</label></li>
+						</ul>
 					</fieldset>
 					<button type="submit">Показать</button>
 				</form>
 			</div>
 			<div class="column-right">
-				<div class="sort">
+				<div class="sort clearfix">
 					<b>Сортировать:</b>
-					<button type="button">По цене</button>
-					<button type="button">По типу</button>
-					<button type="button">По названию</button>
-					<button type="button">max</button>
-					<button type="button">min</button>
+					<ul>
+						<li><button type="button">По цене</button></li>
+						<li><button type="button">По типу</button></li>
+						<li><button type="button">По названию</button></li>
+						<li><button type="button">max</button></li>
+						<li><button type="button">min</button></li>
+					</ul>
 				</div>
 				<div class="cards">
 					<div class="card">
@@ -138,7 +140,8 @@
 	<footer class="main-footer">
 		<div class="container">
 			<div class="adress">
-				<img src="img/map.jpg" width="1440px" height="400px" alt="карта">
+				<img src="img/map.jpg" class="map" width="1440px" height="400px" alt="карта">
+				<img src="img/map-marker.png" class="mark" width="231px" height="190px" alt="метка">
 				<div class="write-us">
 					<b>NËRDS DESIGN STUDIO</b>
 					<p>191186, Санкт-Петербург,<br>
@@ -147,14 +150,16 @@
 					<a class="btn" href="#">НАПИШИТЕ НАМ</a>
 				</div>
 			</div>
-			<div class="social">
+			<div class="social clearfix">
 				<div class="social-btn">
 					<a class="social-vk" href="#">Вконтакте</a>
 					<a class="social-fb" href="#">Facebook</a>
 					<a class="social-in" href="#">Instagram</a>
 				</div>
-				<b>Давайте дружить, это выгодно!</b>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
+				<div class="friends">
+					<b>Давайте дружить, это выгодно!</b>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+				</div>
 			</div>
 		</div>
 	</footer>

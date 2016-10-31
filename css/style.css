@@ -1,5 +1,271 @@
+*{
+	margin: 0;
+}
 body{
 	font-family: "Roboto", serif;
 	font-size: 16px;
-	line-height: ;
+	line-height: 24px;
 }
+.main-header{
+	background-color: #eeeeee;
+}
+.container{
+	width: 1160px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.clearfix::after{
+	content: "";
+
+	display: table;
+	clear: both;
+}
+	.logo{
+		float: left;
+		margin-top: 49px;
+	}
+	.main-menu{
+		float: left;
+		margin-left: 140px;
+		margin-top: 82px;
+	}
+	.main-menu li{
+		display: inline-block;
+	}
+	.basket{
+		float: right;
+		width: 160px;
+		margin-top: 82px;
+	}
+	/*слайдер*/
+	.slider{
+		position: relative;
+		float: left;
+	}
+		.slider-inner{
+			overflow: hidden;
+		}
+		.slider-slides{
+			width: 300%;
+			
+		}
+		.slider-slides>div{
+			float: left;
+			width: 1160px;
+			height: 431px;
+		}
+		.slider input[type=radio] {
+		    display:none;
+		}
+		.slider-controls{
+			display: inline-block;
+			position: absolute;
+			z-index: 20;
+			bottom: 96px;
+			left: 536px;
+		}
+		.slider-controls label {
+		    display: inline-block;
+		    width: 18px;
+		    height: 18px;
+		    margin: 0 3px;
+		    cursor: pointer;
+		    box-shadow:0 0 2px rgba(0, 0, 0, 0.8);
+		    border-radius:50%;
+		    border: 4px solid white;
+		    background-color: #cccccc;
+		}
+		#btn-1:checked ~ .slider-controls label[for="btn-1"],
+		#btn-2:checked ~ .slider-controls label[for="btn-2"],
+		#btn-3:checked ~ .slider-controls label[for="btn-3"]{
+			background-color: #666666;
+		}
+		#btn-1:checked ~ .slider-inner .slider-slides {
+		    transform: translate(0);
+		}
+
+		#btn-2:checked ~ .slider-inner .slider-slides {
+		    transform: translate(-1160px);
+		}
+
+		#btn-3:checked ~ .slider-inner .slider-slides {
+		    transform: translate(-2320px);
+		}
+		.slide1 .column-right{
+			float: right;
+		}
+		.slide1 .column-left{
+			float: left;
+			width: 380px;
+		}
+		.slide1 b{
+			display: block;
+			font-size: 55px;
+			line-height: 55px;
+			margin-top: 35px;
+		}
+		.slide1 p{
+			display: block;
+			margin-top: 28px;
+		}
+		.column-left .btn{
+			display: block;
+			margin-top: 43px;
+			background-color: #fb565a;
+			width: 240px;
+			line-height: 50px;
+			vertical-align: middle;
+			text-align: center;
+			border-radius: 3px;
+		}
+	/*слайдер*/
+	.name-page{
+		float: left;
+		margin-top: 76px;
+		margin-bottom: 117px;
+		width: 1160px;
+	}
+	.name-page h1{
+		text-align: center;
+	}
+/*end header*/
+.main{
+
+}
+	.services{
+		margin-top: 80px;
+	}
+	.site, .application, .presentation{
+		width: 300px;
+		min-height: 347px;
+	}
+	.site{
+		float: left;
+		margin-right: 100px;
+	}
+	.application{
+		float: left;
+	}
+	.presentation{
+		float: right;
+	}
+	.line{
+		border-bottom: 2px solid #eeeeee;
+	}
+	.about-us{
+		margin-top: 40px;
+		margin-bottom: 75px;
+
+	}
+	.about-us .column-left{
+		float: left;
+		width: 680px;
+		margin-top: 40px;
+	}
+	.about-us .column-right{
+		float: right;
+		width: 360px;
+	}
+	.clients{
+		margin-top: 46px;
+		margin-bottom: 44px;
+	}
+
+	.column-left{
+		float: left;
+		margin-top: 60px;
+		width: 260px;
+	}
+	legend{
+		margin-bottom: 60px;
+	}
+	input[type="text"]{
+		width: 80px;
+		height: 38px;
+		text-align: center;
+	}
+	button[type="submit"]{
+		width: 260px;
+		line-height: 50px;
+		vertical-align: middle;
+		text-align: center;
+		background: #eeeeee;
+		border-radius: 3px;
+	}
+	.column-right{
+		float: right;
+		margin-top: 60px;
+		width: 760px;
+	}
+	.sort b{
+		display: block;
+		float: left;
+	}
+	.sort ul{
+		float: right;
+	}
+	.sort li{
+		display: inline-block;
+	}
+	.cards{
+		font-size: 0;
+		margin-top: 60px;
+	}
+	.card{
+		position: relative;
+		display: inline-block;
+		width: 360px;
+		height: 576px;
+		margin-right: 40px;
+		margin-bottom: 36px;
+		font-size: 16px;
+		vertical-align: top;
+	}
+	.card:nth-child(2n){
+		margin-right: 0;	
+	}
+	.description{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 290px;
+		min-height: 162px;
+		padding: 35px;
+		background-color: #eeeeee;
+		text-align: center;
+	}
+/*end main*/
+.main-footer{
+	margin-top: 80px;
+}
+	.adress img{
+		margin-left: -140px;
+
+	}
+	.social-btn{
+		float: left;
+		margin-top: 69px;
+		margin-bottom: 69px;
+	}
+	.friends{
+		float: left;
+		margin-left: 140px;
+		margin-top: 78px;
+	}
+	.adress{
+		position: relative;
+	}
+	.mark{
+		position: absolute;
+		top: 89px;
+		left: 820px;
+	}
+	.write-us{
+		position: absolute;
+		left: 140px;
+		top: 54px;
+		width: 219px;
+		height: 208px;
+		background-color:#ffffff;
+		padding: 50px
+	}
