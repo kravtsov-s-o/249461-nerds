@@ -40,7 +40,6 @@ body{
 	/*слайдер*/
 	.slider{
 		position: relative;
-		float: left;
 	}
 		.slider-inner{
 			overflow: hidden;
@@ -134,43 +133,92 @@ body{
 }
 	.services{
 		margin-top: 80px;
+		min-height: 427px;
 	}
-	.site, .application, .presentation{
+	
+	.services-ell{
 		width: 300px;
 		min-height: 347px;
-	}
-	.site{
 		float: left;
 		margin-right: 100px;
 	}
-	.application{
-		float: left;
-	}
 	.presentation{
-		float: right;
+		margin-right: 0;
 	}
 	.line{
 		border-bottom: 2px solid #eeeeee;
 	}
 	.about-us{
-		margin-top: 40px;
-		margin-bottom: 75px;
-
+		min-height: 485px;
 	}
 	.about-us .column-left{
 		float: left;
+		margin-top: 80px;
 		width: 680px;
-		margin-top: 40px;
+	}
+	.capiton{
+		font-size: 45px;
+		line-height: 45px;
 	}
 	.about-us .column-right{
 		float: right;
 		width: 360px;
 	}
+	.percent-ell{
+		display: inline-block;
+		float: left;
+		margin-right: 25px;
+		width: 100px;
+	}
+	.percent-ell:nth-child(3n){
+		margin-right: 0;
+	}
+	.percent{
+		margin-top: 49px;
+		font-size: 45px;
+		font-weight: bold;
+	}
+	.percent span{
+		vertical-align: 9px;
+		font-size: 34px;
+	}
+	.percent-description{
+		margin-top: 26px;
+	}
 	.clients{
 		margin-top: 46px;
 		margin-bottom: 44px;
+		min-height: 134px;
+		font-size: 0;
+	}
+	.clients a{
+		display: inline-block;
+		width: 260px;
+		line-height: 52px;
+		text-align: center;
+		padding-right: 20px;
+		padding-left: 20px;
+		font-size: 16px;
+		opacity: 0.2;
+
+		/*outline: 1px solid red;*/
+	}
+	.clients a:hover{
+		opacity: 1;
 	}
 
+	.clients a:first-child{
+		padding-left: 0;
+	}
+	.clients a:last-child{
+		padding-right: 0;
+		border-right: none;
+	}
+	.clients img{
+		line-height: 52px;
+		vertical-align: middle;
+		
+	}
 	.column-left{
 		float: left;
 		margin-top: 60px;
@@ -234,6 +282,21 @@ body{
 		background-color: #eeeeee;
 		text-align: center;
 	}
+	.page-btn{
+		display: inline-block;
+		margin-right: 11px;
+		width: 50px;
+		border-radius: 3px;
+		line-height: 50px;
+		vertical-align: middle;
+		text-align: center;
+		background-color: #eeeeee;
+	}
+	.next, .prev{
+		width: 260px;
+	}
+
+
 /*end main*/
 .main-footer{
 	margin-top: 80px;
@@ -268,4 +331,13 @@ body{
 		height: 208px;
 		background-color:#ffffff;
 		padding: 50px
+	}
+	.social-btn a{
+		display: inline-block;
+		margin-right: 12px;
+		width: 79px;
+		height: 79px;
+		background-color: #e1e1e1;
+		border-radius: 50%;
+
 	}
