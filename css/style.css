@@ -335,7 +335,8 @@ body{
 		padding-bottom: 45px;
 		font-size: 0;
 	}
-	.clients a{
+	.client{
+		position: relative;
 		display: inline-block;
 		width: 260px;
 		line-height: 52px;
@@ -345,23 +346,36 @@ body{
 		font-size: 16px;
 		opacity: 0.2;
 	}
-	.clients a:hover{
+	.client::after{
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		width: 2px;
+		height: 52px;
+		border-right: 2px solid #eeeeee;
 		opacity: 1;
 	}
-	.clients a:active{
+	.client:hover{
+		opacity: 1;
+	}
+	.client:active{
 		opacity: 0.1;
 	}
-	.clients a:first-child{
+	.client:first-child{
 		padding-left: 0;
 	}
-	.clients a:last-child{
+	.client:last-child{
 		padding-right: 0;
 		border-right: none;
 	}
-	.clients img{
+	.client img{
 		line-height: 52px;
 		vertical-align: middle;
-		
+	}
+	.client:last-child::after{
+		display: none;
 	}
 	.catalog-filter{
 		float: left;
@@ -532,10 +546,10 @@ body{
 		position: absolute;
 		top:0;
 		left: 0;
-		width: 18px;
-		height: 18px;
-		border: 2px solid rgba(77, 77, 77, 0.4);
-		border-radius: 5px;
+		width: 23px;
+		height: 23px;
+		background: url(../img/checkbox-off.png) no-repeat;
+		opacity: 0.4;
 	}
 	.catalog-filter input[type="checkbox"]:checked + label::before{
 		content: "";
@@ -553,13 +567,27 @@ body{
 	}
 	.catalog-filter input[type="checkbox"] + label:hover::before{
 		content: "";
-		border: 2px solid rgba(77, 77, 77, 1);
+		background: url(../img/checkbox-off.png) no-repeat;
+		opacity: 1;
 	}
 	.catalog-filter input[type="checkbox"]:checked + label:hover::before{
 		content: "";
-		border: none;
+		background: url(../img/checkbox-on.png) no-repeat;
 		opacity: 1;
 	}
+	.catalog-filter input[type="checkbox"]:disabled + label{
+		color: rgba(40, 49, 54, 0.3);
+	}
+	.catalog-filter input[type="checkbox"]:disabled + label::before{
+		content: "";
+		background: url(../img/checkbox-off.png) no-repeat;
+		opacity: 0.3;
+	}
+	/*.catalog-filter input[type="checkbox"]:checked:disabled + label::before{
+		content: "";
+		background: url(../img/checkbox-on.png) no-repeat;
+		opacity: 0.3;
+	}*/
 /*стилизация checkbox*/
 	.catalog-filter .btn{
 		width: 260px;
@@ -842,6 +870,10 @@ body{
 	.form-write-us textarea:focus{
 		color: #000000;
 		border: 2px solid #000000;
+	}
+	.form-write-us .error{
+		color: #e74246;
+		border: 2px solid #e74246;
 	}
 	.form-write-us .btn{
 		padding-left: 84px;
