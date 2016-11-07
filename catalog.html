@@ -12,7 +12,7 @@
 		<div class="container clearfix">
 			<div class="header clearfix">
 				<div class="logo">
-					<img src="img/nerds-logo.png" width="160px" height="65px" alt="Nerds">
+					<a href="#"><img src="img/nerds-logo.png" width="160px" height="65px" alt="Nerds"></a>
 				</div>
 				<nav class="main-menu">
 					<ul>
@@ -42,7 +42,7 @@
 	<main>
 		<div class="container clearfix">
 			<div class="column-left">
-				<form action="#" method="post">
+				<form action="#" method="get">
 					<fieldset>
 						<legend>Стоимость:</legend>
 							<div class="range-price">
@@ -81,10 +81,10 @@
 				<div class="sort clearfix">
 					<b>Сортировать:</b>
 					<ul>
-						<li><a class="btn" href="#">По цене</a></li>
+						<li><a class="btn active" href="#">По цене</a></li>
 						<li><a class="btn" href="#">По типу</a></li>
 						<li><a class="btn" href="#">По названию</a></li>
-						<li><a class="btn" href="#">&#9660;</a></li>
+						<li><a class="btn active" href="#">&#9660;</a></li>
 						<li><a class="btn" href="#">&#9650;</a></li>
 					</ul>
 				</div>
@@ -139,7 +139,7 @@
 					</div>
 				</div>
 				<div class="paginator">
-					<a class="page-btn" href="#">1</a>
+					<a class="page-btn active" href="#">1</a>
 					<a class="page-btn" href="#">2</a>
 					<a class="page-btn" href="#">3</a>
 					<a class="page-btn next" href="#">Следующая</a>
@@ -159,6 +159,25 @@
 					<p>тел. +7 (812) 275-75-75</p>
 					<a class="btn" href="#">НАПИШИТЕ НАМ</a>
 				</div>
+				<div class="form-write-us">
+					<b>Напишите нам</b>
+					<a class="close" href="#close">Закрыть</a>
+					<form action="#" method="post">
+						<div class="left">
+							<label for="name">Ваше имя:</label>
+							<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" tabindex="1">
+						</div>
+						<div class="left">
+							<label for="email">Ваш e-mail:</label>
+							<input type="text" name="email" id="email" placeholder="Для отправки ответа"  tabindex="2">
+						</div>
+						<div class="text">
+							<label for="mail">Текст письма:</label>
+							<textarea name="mail" id="mail" placeholder="В свободной форме"  tabindex="3"></textarea>
+						</div>
+						<button class="btn">Отправить</button>
+					</form>
+				</div>
 			</div>
 			<div class="social clearfix">
 				<div class="social-btn">
@@ -167,7 +186,7 @@
 					<a class="social-in" href="#">Instagram</a>
 				</div>
 				<div class="friends">
-					<b>Давайте дружить, это выгодно!</b>
+					<h3>Давайте дружить, это выгодно!</h3>
 					<p>Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 			</div>
