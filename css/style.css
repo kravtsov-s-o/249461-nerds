@@ -60,6 +60,9 @@ body{
 	.main-menu li a:active{
 		opacity: 0.3;
 	}
+	.main-menu .active{
+		border-bottom: 2px solid #fb565a; 
+	}
 	.basket{
 		float: right;
 		margin-right: : 
@@ -68,9 +71,9 @@ body{
 	.basket a{
 		position: relative;
 		display: block;
-		padding: 16px 20px;
+		padding: 16px 0;
 		padding-top: 32px;
-		padding-left: 50px;
+		padding-left: 40px;
 		font-size: 16px;
 		font-weight: 500;
 		text-transform: uppercase;
@@ -88,10 +91,13 @@ body{
 
 		position: absolute;
 		top: 37px;
-		left: 10px;
+		left: 0;
 		width: 15px;
 		height: 15px;
 		background: url(../img/sprite.png) no-repeat -10px -10px;
+	}
+	.basket .active{
+		border-bottom: 2px solid #fb565a;
 	}
 	.btn{
 		display: inline-block;
@@ -357,14 +363,14 @@ body{
 		vertical-align: middle;
 		
 	}
-	.column-left{
+	.catalog-filter{
 		float: left;
 		margin-top: 60px;
 		width: 260px;
 	}
 	/*ранжировка цен*/
 		.range-price{
-			margin-top: 35px;
+			margin-top: 45px;
 			margin-bottom: 14px;
 		}
 		.background{
@@ -433,24 +439,24 @@ body{
 			background: #ababab;
 		}
 	/*ранжировка цен*/
-	.column-left form ul{
+	.catalog-filter ul{
 		list-style: none;
 		padding: 0;
 	}
-	.column-left form li{
-		padding-bottom: 24px;
+	.catalog-filter li{
+		/*padding-bottom: 24px;*/
 	}
-	.column-left fieldset{
+	.catalog-filter fieldset{
 		padding: 0;
 		border: none;
 		margin-bottom: 45px;
 	}
-	.column-left legend{
-		margin-bottom: 25px;
+	.catalog-filter legend{
+		margin-bottom: 15px;
 		font-weight: bold;
 		text-transform: uppercase;
 	}
-	.column-left input[type="text"]{
+	.catalog-filter input[type="text"]{
 		width: 80px;
 		height: 38px;
 		margin-left: 11px;
@@ -459,10 +465,101 @@ body{
 		background-color: #eeeeee;
 		text-align: center;
 	}
-	.column-left input[type="text"]:first-of-type{
+	.catalog-filter input[type="text"]:first-of-type{
 		margin-right: 18px;
 	}
-	.column-left form .btn{
+/*стилизация radio*/
+	.catalog-filter input[type="radio"]{
+		display: none;
+	}
+	.catalog-filter input[type="radio"] + label{
+		position: relative;
+		display: block;
+		margin: 11px 0;
+		padding-left: 36px;
+		color: #283136;
+		line-height: 25px; 
+		vertical-align: middle;
+	}
+	.catalog-filter input[type="radio"] + label::before{
+		content: "";
+		position: absolute;
+		top:0;
+		left: 0;
+		width: 17px;
+		height: 17px;
+		border: 4px solid rgba(77, 77, 77, 0.4);
+		border-radius: 50%;
+	}
+	.catalog-filter input[type="radio"]:checked + label::after{
+		content: "";
+		position: absolute;
+		top: 8px;
+		left: 8px;
+		width: 9px;
+		height: 9px;
+		border-radius: 50%;
+		background: rgba(77, 77, 77, 0.4);
+	}
+	.catalog-filter input[type="radio"] + label:hover{
+		color: #000000;
+	}
+	.catalog-filter input[type="radio"] + label:hover::before{
+		content: "";
+		border: 4px solid rgba(77, 77, 77, 1);
+	}
+	.catalog-filter input[type="radio"]:checked + label:hover::after{
+		content: "";
+		background: rgba(77, 77, 77, 1);
+	}
+
+/*стилизация radio*/
+/*стилизация checkbox*/
+	.catalog-filter input[type="checkbox"]{
+		display: none;
+	}
+	.catalog-filter input[type="checkbox"] + label{
+		position: relative;
+		display: block;
+		margin: 11px 0;
+		padding-left: 36px;
+		color: #283136;
+		line-height: 25px; 
+		vertical-align: middle;
+	}
+	.catalog-filter input[type="checkbox"] + label::before{
+		content: "";
+		position: absolute;
+		top:0;
+		left: 0;
+		width: 18px;
+		height: 18px;
+		border: 2px solid rgba(77, 77, 77, 0.4);
+		border-radius: 5px;
+	}
+	.catalog-filter input[type="checkbox"]:checked + label::after{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 26px;
+		height: 23px;
+		background: #ffffff url(../img/checkbox-on.png) no-repeat;
+		opacity: 0.4;
+	}
+	.catalog-filter input[type="checkbox"] + label:hover{
+		color: #000000;
+	}
+	.catalog-filter input[type="checkbox"] + label:hover::before{
+		content: "";
+		border: 2px solid rgba(77, 77, 77, 1);
+	}
+	.catalog-filter input[type="checkbox"]:checked + label:hover::after{
+		content: "";
+		opacity: 1;
+	}
+/*стилизация checkbox*/
+	.catalog-filter .btn{
 		width: 260px;
 		vertical-align: middle;
 		text-align: center;
@@ -471,10 +568,10 @@ body{
 		border-radius: 3px;
 		cursor: pointer;
 	}
-	.column-left form .btn:hover{
+	.catalog-filter .btn:hover{
 		background: #dfdfdf;
 	}
-	.column-left form .btn:active{
+	.catalog-filter .btn:active{
 		color: rgba(0, 0, 0, 0.3);
 		background: #d5d5d5;
 		box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1)
@@ -533,6 +630,12 @@ body{
 		margin-bottom: 36px;
 		font-size: 16px;
 		vertical-align: top;
+		
+	}
+	.card img{
+		width: 358px;
+		height: 574px;
+		border: 1px solid #e5e5e5;
 	}
 	.card:nth-child(2n){
 		margin-right: 0;	
@@ -560,6 +663,12 @@ body{
 	.description b{
 		text-transform: uppercase;
 	}
+	.card:hover img{
+		width: 360px;
+		height: 576px;
+		border: none;
+		box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+	}
 	.card:hover .description{
 		display: block;
 	}
@@ -568,6 +677,9 @@ body{
 	}
 	.card .btn{
 		padding: 19px 60px;
+	}
+	.card .btn:active{
+		color: #ffffff;
 	}
 	.page-btn{
 		display: inline-block;
