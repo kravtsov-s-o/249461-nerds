@@ -537,14 +537,15 @@ body{
 		border: 2px solid rgba(77, 77, 77, 0.4);
 		border-radius: 5px;
 	}
-	.catalog-filter input[type="checkbox"]:checked + label::after{
+	.catalog-filter input[type="checkbox"]:checked + label::before{
 		content: "";
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 26px;
 		height: 23px;
-		background: #ffffff url(../img/checkbox-on.png) no-repeat;
+		border:none;
+		background: url(../img/checkbox-on.png) no-repeat;
 		opacity: 0.4;
 	}
 	.catalog-filter input[type="checkbox"] + label:hover{
@@ -554,8 +555,9 @@ body{
 		content: "";
 		border: 2px solid rgba(77, 77, 77, 1);
 	}
-	.catalog-filter input[type="checkbox"]:checked + label:hover::after{
+	.catalog-filter input[type="checkbox"]:checked + label:hover::before{
 		content: "";
+		border: none;
 		opacity: 1;
 	}
 /*стилизация checkbox*/
