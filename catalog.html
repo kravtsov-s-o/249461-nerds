@@ -22,8 +22,8 @@
 						<li>
 							<a href="#">Клиенты</a>
 						</li>
-						<li>
-							<a class="active" href="catalog.html">Магазин</a>
+						<li class="active">
+							<a>Магазин</a>
 						</li>
 						<li>
 							<a href="#">Контакты</a>
@@ -34,7 +34,7 @@
 					<a href="#">Корзина</a>
 				</div>
 			</div>
-			<div class="name-page">
+			<div class="inner-name-page">
 				<h1>Магазин готовых шаблонов</h1>
 			</div>
 		</div>
@@ -80,11 +80,11 @@
 			<div class="column-right">
 				<div class="sort clearfix">
 					<b>Сортировать:</b>
-					<ul>
-						<li><a class="btn active" href="#">По цене</a></li>
+					<ul class="sorting">
+						<li class="active"><a class="btn">По цене</a></li>
 						<li><a class="btn" href="#">По типу</a></li>
 						<li><a class="btn" href="#">По названию</a></li>
-						<li><a class="btn active" href="#">&#9660;</a></li>
+						<li class="active"><a class="btn">&#9660;</a></li>
 						<li><a class="btn" href="#">&#9650;</a></li>
 					</ul>
 				</div>
@@ -139,7 +139,7 @@
 					</div>
 				</div>
 				<div class="paginator">
-					<a class="page-btn active" href="#">1</a>
+					<a class="page-btn active">1</a>
 					<a class="page-btn" href="#">2</a>
 					<a class="page-btn" href="#">3</a>
 					<a class="page-btn next" href="#">Следующая</a>
@@ -155,13 +155,13 @@
 				<div class="write-us">
 					<b>NËRDS DESIGN STUDIO</b>
 					<p>191186, Санкт-Петербург,<br>
-						ул. Б.Конюенная, д. 19/8</p>
+						ул. Б.Конюшенная, д. 19/8</p>
 					<p>тел. +7 (812) 275-75-75</p>
 					<a class="btn" href="#">НАПИШИТЕ НАМ</a>
 				</div>
 				<div class="form-write-us">
 					<b>Напишите нам</b>
-					<a class="close" href="#close">Закрыть</a>
+					<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 					<form action="#" method="post">
 						<div class="left">
 							<label for="name">Ваше имя:</label>
@@ -169,7 +169,7 @@
 						</div>
 						<div class="left">
 							<label for="email">Ваш e-mail:</label>
-							<input type="text" name="email" id="email" placeholder="Для отправки ответа"  tabindex="2">
+							<input type="email" name="email" id="email" placeholder="Для отправки ответа"  tabindex="2">
 						</div>
 						<div class="text">
 							<label for="mail">Текст письма:</label>
