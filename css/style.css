@@ -7,7 +7,13 @@ body{
 }
 .main-header{
 	background-color: #eeeeee;
-	margin-bottom: 55px;
+	
+}
+.main-page{
+	margin-top: 75px;
+}
+.inner-page{
+	margin-top: 55px;
 }
 .container{
 	width: 1160px;
@@ -44,6 +50,7 @@ body{
 	}
 	.main-menu li{
 		display: inline-block;
+		vertical-align: top;
 	}
 	.main-menu li a{
 		display: block;
@@ -77,7 +84,6 @@ body{
 		content: "";
 
 		position: absolute;
-		/*width: 100%;*/
 		height: 2px;
 		right: 22px;
 		bottom: 8px;
@@ -130,6 +136,7 @@ body{
 		text-decoration: none;
 		border-radius: 3px;
 		border: none;
+		outline: none;
 		background: #fb565a;
 	}
 	.btn:hover{
@@ -162,16 +169,19 @@ body{
 		.slider-controls{
 			display: inline-block;
 			position: absolute;
-			z-index: 20;
+			z-index: 1;
 			bottom: 96px;
 			left: 50%;
-			transform: translate(-50%);
+			vertical-align: top;
+			-webkit-transform: translate(-50%);
+			        transform: translate(-50%);
 		}
 		.slider-controls label {
 		    display: inline-block;
 		    width: 18px;
 		    height: 18px;
 		    margin: 0 7px;
+		    vertical-align: top;
 		    cursor: pointer;
 		    border-radius:50%;
 		    background-color: #ffffff;
@@ -196,15 +206,18 @@ body{
 			background-color: white;
 		}
 		#btn-1:checked ~ .slider-inner .slider-slides {
-		    transform: translate(0);
+		    -webkit-transform: translate(0);
+		            transform: translate(0);
 		}
 
 		#btn-2:checked ~ .slider-inner .slider-slides {
-		    transform: translate(-1160px);
+		    -webkit-transform: translate(-1160px);
+		            transform: translate(-1160px);
 		}
 
 		#btn-3:checked ~ .slider-inner .slider-slides {
-		    transform: translate(-2320px);
+		    -webkit-transform: translate(-2320px);
+		            transform: translate(-2320px);
 		}
 		.slide1{
 			position: relative;
@@ -355,7 +368,7 @@ body{
 		width: 360px;
 	}
 	.about-us img{
-		margin-top: -20px;
+		margin-top: 40px;
 		margin-bottom: 30px;
 	}
 	.accuracy{
@@ -368,6 +381,7 @@ body{
 		display: inline-block;
 		margin-right: 23px;
 		width: 95px;
+		vertical-align: top;
 	}
 	.percent-ell:nth-child(3n){
 		margin-right: 0;
@@ -386,6 +400,7 @@ body{
 	.clients{
 		padding-top: 50px;
 		padding-bottom: 44px;
+		margin-bottom: 80px;
 		font-size: 0;
 	}
 	.clients ul{
@@ -398,6 +413,7 @@ body{
 		display: inline-block;
 		padding-right: 20px;
 		padding-left: 20px;
+		vertical-align: top;
 	}
 	.clients li:first-child{
 		padding-left: 0;
@@ -410,7 +426,8 @@ body{
 		position: absolute;
 		top: 50%;
 		right: 5px;
-		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		        transform: translateY(-50%);
 		width: 2px;
 		height: 52px;
 		border-right: 2px solid #eeeeee;
@@ -481,6 +498,7 @@ body{
 			background: #ababab;
 			border: 8px solid #ffffff; 
 			box-shadow: 0 2px 0 0 #cccdcd;
+			cursor: pointer;
 		}
 		.max{
 			left: 160px;
@@ -531,6 +549,7 @@ body{
 		color: #283136;
 		line-height: 25px; 
 		vertical-align: middle;
+		cursor: pointer;
 	}
 	.catalog-filter input[type="radio"] + label::before{
 		content: "";
@@ -587,6 +606,7 @@ body{
 		color: #283136;
 		line-height: 25px; 
 		vertical-align: middle;
+		cursor: pointer;
 	}
 	.catalog-filter input[type="checkbox"] + label::before{
 		content: "";
@@ -657,6 +677,7 @@ body{
 	}
 	.column-right{
 		float: right;
+		margin-top: 4px;
 		width: 760px;
 	}
 	.sort b{
@@ -675,6 +696,7 @@ body{
 	.sorting li{
 		display: inline-block;
 		margin-left: 20px;
+		vertical-align: top;
 	}
 	.sorting li:nth-child(1){
 		margin-left: 0;
@@ -690,7 +712,7 @@ body{
 		font-weight: normal;
 		font-size: 14px;
 		line-height: 18px;
-		vertical-align: bottom;
+		vertical-align: top;
 		color: rgba(0, 0, 0, 0.3);
 		background: none;
 	}
@@ -708,7 +730,7 @@ body{
 	}
 	.cards{
 		font-size: 0;
-		margin-top: 60px;
+		margin-top: 50px;
 	}
 	.card{
 		position: relative;
@@ -751,10 +773,12 @@ body{
 		background-color: #eeeeee;
 		text-align: center;
 	}
-	.description b{
-		margin-bottom: 25px;
+	.item a{
+		margin-bottom: 5px;
 		font-size: 18px;
 		line-height: 30px;
+		text-decoration: none;
+		color: #000000;
 		text-transform: uppercase;
 	}
 	.description p{
@@ -783,7 +807,7 @@ body{
 	.page-btn{
 		display: inline-block;
 		margin-top: 24px;
-		margin-right: 11px;
+		margin-right: 8px;
 		width: 50px;
 		font-weight: 500;
 		text-transform: uppercase;
@@ -803,6 +827,9 @@ body{
 		background: #d5d5d5;
 		box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
 	}
+	.paginator{
+		margin-bottom: 65px;
+	}
 	.paginator .active{
 		line-height: 44px;
 		width: 44px;
@@ -819,7 +846,7 @@ body{
 
 /*end main*/
 .main-footer{
-	margin-top: 80px;
+	
 }
 	.adress img{
 		margin-left: -140px;
@@ -855,14 +882,15 @@ body{
 	.write-us .btn{
 		margin-top: 31px;
 		padding: 16px 44px;
-		padding-left: 45px;
 	}
 	/*всплывающее окно*/
 	.form-write-us{
 		position: fixed;
 		left: 50%;
-		bottom: 180px;
-		transform: translate(-50%);
+		bottom: 179px;
+		z-index: 2;
+		-webkit-transform: translate(-50%);
+		        transform: translate(-50%);
 		display: none; /* убрать чтобы увидеть, пока не активированы скрипты */
 		padding-top: 73px;
 		padding-left: 100px;
@@ -878,7 +906,7 @@ body{
 	}
 	.left{
 		float: left;
-		margin-top: 50px;
+		margin-top: 37px;
 		width: 360px;
 	}
 	.left:first-child{
@@ -891,22 +919,23 @@ body{
 	.form-write-us input[type="email"]{
 		width: 330px;
 		line-height: 18px;
-		margin-top: 13px;
+		margin-top: 6px;
 		padding: 15px 13px;
 		border: 2px solid #d7dcde;
 		border-radius: 3px;
 	}
 	.text{
 		float: left;
-		margin-top: 35px;
+		margin-top: 30px;
 	}
 	.form-write-us textarea{
 		width: 728px;
 		height: 86px;
+		margin-top: 6px;
 		padding: 14px;
-		margin-top: 13px;
 		border: 2px solid #d7dcde;
 		border-radius: 3px;
+		resize: none;
 	}
 	.form-write-us input[type="text"],
 	.form-write-us input[type="email"],
@@ -926,8 +955,9 @@ body{
 	.form-write-us textarea:focus{
 		color: #000000;
 		border: 2px solid #000000;
+		outline: none;
 	}
-	.form-write-us input[type="text"]:invaled,
+	.form-write-us input[type="text"]:invalid,
 	.form-write-us input[type="email"]:invalid,
 	.form-write-us textarea:invalid{
 		color: #e74246;
@@ -949,19 +979,21 @@ body{
 	.modal-content-close::after{
 		content: "";
 		position: absolute;
-		top: 8px;
-		left: -3px;
+		top: 5px;
+		left: -2px;
 		width: 26px;
 		height: 4px;
 		background: #fecccd;
 		border-radius: 1px;
 	}
 	.modal-content-close::before {
-		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		        transform: rotate(45deg);
 	}
 
 	.modal-content-close::after {
-		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
 	}
 	.modal-content-close:hover::before,
 	.modal-content-close:hover::after{
@@ -972,7 +1004,7 @@ body{
 		background: #ffeeee;
 	}
 	.form-write-us .btn{
-		margin-top: 48px;
+		margin-top: 45px;
 		padding: 16px 84px; 
 	}
 	/*всплывающее окно*/
@@ -983,12 +1015,13 @@ body{
 	}
 	.social-btn a{
 		display: inline-block;
-		margin-right: 12px;
+		margin-right: 9px;
 		width: 79px;
 		height: 79px;
 		font-size: 0;
 		background-color: #e1e1e1;
 		border-radius: 50%;
+		vertical-align: top;
 	}
 	.social-vk{
 		position: relative;
@@ -1031,6 +1064,7 @@ body{
 	}
 	.social-btn a:active{
 		background: #d7373b;
+		box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
 	}
 	.social-btn a:active::before{
 		content: "";
@@ -1038,7 +1072,7 @@ body{
 	}
 	.friends{
 		float: left;
-		margin-left: 120px;
+		margin-left: 130px;
 		margin-top: 82px;
 	}
 	.friends h3{
