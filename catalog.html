@@ -12,7 +12,7 @@
 		<div class="container clearfix">
 			<div class="header clearfix">
 				<div class="logo">
-					<a href="index.html"><img src="img/nerds-logo.png" width="160px" height="65px" alt="Nerds"></a>
+					<a href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Nerds"></a>
 				</div>
 				<nav class="main-menu">
 					<ul>
@@ -22,7 +22,7 @@
 						<li>
 							<a href="#">Клиенты</a>
 						</li>
-						<li class="active">
+						<li class="active-menu">
 							<a>Магазин</a>
 						</li>
 						<li>
@@ -48,9 +48,9 @@
 							<div class="range-price">
 								<div class="background">
 									<div class="range"></div>
-									<div class="range2"></div>
-									<div class="min"></div>
-									<div class="max"></div>
+									<div class="range-selected"></div>
+									<div class="min-runner"></div>
+									<div class="max-runner"></div>
 								</div>
 							</div>
 						<label for="min-price">ОТ </label><input type="text" name="min-price" id="min-price" value="0">
@@ -74,72 +74,72 @@
 							<li><input type="checkbox" name="basket" id="basket"> <label for="basket"> Корзина</label></li>
 						</ul>
 					</fieldset>
-					<button class="btn" type="submit">Показать</button>
+					<button class="btn btn-show" type="submit">Показать</button>
 				</form>
 			</div>
-			<div class="column-right">
+			<div class="products">
 				<div class="sort clearfix">
-					<b>Сортировать:</b>
+					<b class="classify">Сортировать:</b>
 					<ul class="sorting">
-						<li class="active"><a class="btn">По цене</a></li>
-						<li><a class="btn" href="#">По типу</a></li>
-						<li><a class="btn" href="#">По названию</a></li>
-						<li class="active"><a class="btn">&#9660;</a></li>
-						<li><a class="btn" href="#">&#9650;</a></li>
+						<li class="active-sorting"><a class="btn btn-sorting">По цене</a></li>
+						<li><a class="btn btn-sorting" href="#">По типу</a></li>
+						<li><a class="btn btn-sorting" href="#">По названию</a></li>
+						<li class="active-sorting"><a class="btn btn-sorting">&#9660;</a></li>
+						<li><a class="btn btn-sorting" href="#">&#9650;</a></li>
 					</ul>
 				</div>
 				<div class="cards">
 					<div class="card">
-						<img src="img/img-sedona.jpg" width="360px" height="576px" alt="Sedona">
+						<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
 						<div class="description">
-							<b class="item"><a href="#">Sedona</a></b>
-							<p>Информацинный сайт<br>для туристов</p>
-							<a class="btn" href="#">9900 руб.</a>
+							<a class="item" href="#">Sedona</a>
+							<p class="paragraph">Информацинный сайт<br>для туристов</p>
+							<a class="btn btn-description" href="#">9900 руб.</a>
 						</div>
 					</div>
 					<div class="card">
-						<img src="img/img-pink.jpg" width="360px" height="576px" alt="Pink">
+						<img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
 						<div class="description">
-							<b class="item"><a href="#">Pink APP</a></b>
-							<p>Продуктовый лендинг<br>приложения для iOS и Android</p>
-							<a class="btn" href="#">9900 руб.</a>
+							<a class="item" href="#">Pink APP</a>
+							<p  class="paragraph">Продуктовый лендинг<br>приложения для iOS и Android</p>
+							<a class="btn btn-description" href="#">9900 руб.</a>
 						</div>
 					</div>
 					<div class="card">
-						<img src="img/img-barbershop.jpg" width="360px" height="576px" alt="Barbershop">
+						<img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
 						<div class="description">
-							<b class="item"><a href="#">Barbershop</a></b>
-							<p>Сайт салоны красоты.<br>Для мужчин, да.</p>
-							<a class="btn" href="#">9900 руб.</a>
+							<a class="item" href="#">Barbershop</a>
+							<p class="paragraph">Сайт салоны красоты.<br>Для мужчин, да.</p>
+							<a class="btn btn-description" href="#">9900 руб.</a>
 						</div>
 					</div>
 					<div class="card">
-						<img src="img/img-mishka.jpg" width="360px" height="576px" alt="Mishka">
+						<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
 						<div class="description">
-							<b class="item"><a href="#">Mishka</a></b>
-							<p>Интернет-магазин<br>вязаных игрушек</p>
-							<a class="btn" href="#">9900 руб.</a>
+							<a class="item" href="#">Mishka</a>
+							<p class="paragraph">Интернет-магазин<br>вязаных игрушек</p>
+							<a class="btn btn-description" href="#">9900 руб.</a>
 						</div>
 					</div>
 					<div class="card">
-						<img src="img/img-aplus.jpg" width="360px" height="576px" alt="A PLUS HOVER">
+						<img src="img/img-aplus.jpg" width="360" height="576" alt="A PLUS HOVER">
 						<div class="description">
-							<b class="item"><a href="#">A PLUS</a></b>
-							<p>Лендинг курсов повышения<br>квалификации</p>
-							<a class="btn" href="#">9900 руб.</a>
+							<a class="item" href="#">A PLUS</a>
+							<p class="paragraph">Лендинг курсов повышения<br>квалификации</p>
+							<a class="btn btn-description" href="#">9900 руб.</a>
 						</div>
 					</div>
 					<div class="card">
-						<img src="img/img-kvast.jpg" width="360px" height="576px" alt="КВАСТ">
+						<img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ">
 						<div class="description">
-							<b class="item"><a href="#">КВАСТ</a></b>
-							<p>Промо-сайт производителя<br>крафтового кваса</p>
-							<a class="btn" href="#">9900 руб.</a>
+							<a class="item" href="#">КВАСТ</a>
+							<p class="paragraph">Промо-сайт производителя<br>крафтового кваса</p>
+							<a class="btn btn-description" href="#">9900 руб.</a>
 						</div>
 					</div>
 				</div>
 				<div class="paginator">
-					<a class="page-btn active">1</a>
+					<a class="page-btn paginator-active">1</a>
 					<a class="page-btn" href="#">2</a>
 					<a class="page-btn" href="#">3</a>
 					<a class="page-btn next" href="#">Следующая</a>
@@ -150,14 +150,15 @@
 	<footer class="main-footer">
 		<div class="container">
 			<div class="adress">
-				<img src="img/map.jpg" class="map" width="1440px" height="400px" alt="карта">
-				<img src="img/map-marker.png" class="mark" width="231px" height="190px" alt="метка">
+				<img src="img/map.jpg" class="map" width="1440" height="400" alt="карта">
+				<img src="img/map-marker.png" class="mark" width="231" height="190" alt="метка">
 				<div class="write-us">
 					<b>NËRDS DESIGN STUDIO</b>
 					<p>191186, Санкт-Петербург,<br>
-						ул. Б.Конюшенная, д. 19/8</p>
-					<p>тел. +7 (812) 275-75-75</p>
-					<a class="btn" href="#">НАПИШИТЕ НАМ</a>
+						ул. Б.Конюшенная, д. 19/8<br>
+						<br>
+						тел. +7 (812) 275-75-75</p>
+					<a class="btn write" href="#">НАПИШИТЕ НАМ</a>
 				</div>
 				<div class="form-write-us">
 					<b>Напишите нам</b>
@@ -169,28 +170,29 @@
 						</div>
 						<div class="left">
 							<label for="email">Ваш e-mail:</label>
-							<input type="email" name="email" id="email" placeholder="Для отправки ответа"  tabindex="2">
+							<input type="text" name="email" id="email" placeholder="Для отправки ответа"  tabindex="2" >
 						</div>
 						<div class="text">
 							<label for="mail">Текст письма:</label>
 							<textarea name="mail" id="mail" placeholder="В свободной форме"  tabindex="3"></textarea>
 						</div>
-						<button class="btn">Отправить</button>
+						<button class="btn write-us-btn"  type="submit">Отправить</button>
 					</form>
 				</div>
 			</div>
 			<div class="social clearfix">
-				<div class="social-btn">
-					<a class="social-vk" href="#">Вконтакте</a>
-					<a class="social-fb" href="#">Facebook</a>
-					<a class="social-in" href="#">Instagram</a>
+				<div class="social-btns">
+					<a class="social-btn social-vk" href="#">Вконтакте</a>
+					<a class="social-btn social-fb" href="#">Facebook</a>
+					<a class="social-btn social-in" href="#">Instagram</a>
 				</div>
 				<div class="friends">
-					<h3>Давайте дружить, это выгодно!</h3>
-					<p>Скидка 10% для друзей из социальных сетей.</p>
+					<h3 class="friends-header">Давайте дружить, это выгодно!</h3>
+					<p class="friends-paragraph">Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 			</div>
 		</div>
 	</footer>
+	<script src="js/write-us.js"></script>
 </body>
 </html>

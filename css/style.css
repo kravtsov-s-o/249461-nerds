@@ -1,4 +1,5 @@
 body{
+	min-width: 1160px;
 	padding: 0;
 	margin: 0;
 	font-size: 16px;
@@ -7,7 +8,7 @@ body{
 }
 .main-header{
 	background-color: #eeeeee;
-	
+	min-width: 900px;
 }
 .main-page{
 	margin-top: 75px;
@@ -52,7 +53,7 @@ body{
 		display: inline-block;
 		vertical-align: top;
 	}
-	.main-menu li a{
+	.main-menu a{
 		display: block;
 		padding: 16px 0;
 		margin: 0 22px;
@@ -64,23 +65,22 @@ body{
 		text-decoration: none;
 		color: #000000;
 	}
-	.main-menu li a:hover{
+	.main-menu a:hover{
 		color: #fb565a;
 	}
-	.main-menu li a:active{
+	.main-menu a:active{
 		color: rgba(0, 0, 0, 0.3);
-		/*opacity: 0.3;*/
 	}
-	.main-menu .active,
-	.basket .active{
+	.active-menu,
+	.active-basket{
 		position: relative;
 	}
-	.main-menu .active a:hover,
-	.basket .active a:hover{
+	.active-menu a:hover,
+	.active-basket a:hover{
 		color: #000000;
 	}
-	.main-menu .active::after,
-	.basket .active::after{
+	.active-menu::after,
+	.active-basket::after{
 		content: "";
 
 		position: absolute;
@@ -222,7 +222,7 @@ body{
 		.slide1{
 			position: relative;
 		}
-		.slide1 img{
+		.slide-pic{
 			position: absolute;
 			right: 0;
 			bottom: 0;
@@ -232,19 +232,19 @@ body{
 			float: left;
 			width: 550px;
 		}
-		.slide1 h1{
+		.slide-header{
 			display: block;
 			font-size: 55px;
 			line-height: 55px;
 			margin-top: 70px;
 			margin-bottom: 27px; 
 		}
-		.slide1 p{
+		.slide-description{
 			display: block;
 			margin-top: 0px;
 			line-height: 24px;
 		}
-		.slide1 .btn{
+		.btn-slide{
 			margin-top: 25px;
 			padding: 16px 54px;
 			text-align: center;
@@ -279,41 +279,41 @@ body{
 		width: 300px;
 		
 	}
-	.services-ell img{
+	.services-pic{
 		margin-bottom: -15px;
 	}
-	.services-ell h4{
+	.service-header{
 		margin-bottom: 0; 
 		font-size: 24px;
 		line-height: 30px;
 		vertical-align: top;
 		text-transform: uppercase;
 	}
-	.services-ell p{
+	.service-description{
 		margin-bottom: 33px;
 		letter-spacing: 0;
 	}
-	.services-ell .btn{
+	.btn-services{
 		padding: 16px 40px;
 	}
-	.application .btn{
+	.btn-application{
 		background: #00ca74;
 	}
-	.application .btn:hover{
+	.btn-application:hover{
 		background: #00bc6c;
 	}
-	.application .btn:active{
+	.btn-application:active{
 		color: rgba(255, 255, 255, 0.3);
 		background: #00aa62;
 		box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
 	}
-	.presentation .btn{
+	.btn-presentation{
 		background: #efc84a;
 	}
-	.presentation .btn:hover{
+	.btn-presentation:hover{
 		background: #eab534;
 	}
-	.presentation .btn:active{
+	.btn-presentation:active{
 		color: rgba(255, 255, 255, 0.3);
 		background: #e5a722;
 		box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
@@ -341,9 +341,11 @@ body{
 	.about-us p{
 		margin-bottom: 40px;
 	}
-	.about-us b{
-		font-weight: 700;
+	.accuracy{
+		line-height: 24px;
+		font-weight: bold;
 		text-transform: uppercase;
+		text-align: center;
 	}
 	.about-us ul{
 		margin-top: 24px;
@@ -371,12 +373,7 @@ body{
 		margin-top: 40px;
 		margin-bottom: 30px;
 	}
-	.accuracy{
-		line-height: 24px;
-		font-weight: bold;
-		text-transform: uppercase;
-		text-align: center;
-	}
+	
 	.percent-ell{
 		display: inline-block;
 		margin-right: 23px;
@@ -386,10 +383,10 @@ body{
 	.percent-ell:nth-child(3n){
 		margin-right: 0;
 	}
-	.percent-ell h2{
+	.percent{
 		font-size: 45px;
 	}
-	.percent-ell span{
+	.percent span{
 		vertical-align: 17px;
 		font-size: 25px;
 	}
@@ -413,7 +410,7 @@ body{
 		display: inline-block;
 		padding-right: 20px;
 		padding-left: 20px;
-		vertical-align: top;
+		vertical-align: middle;
 	}
 	.clients li:first-child{
 		padding-left: 0;
@@ -451,7 +448,7 @@ body{
 	.client:active{
 		opacity: 0.1;
 	}
-	.client img{
+	.client-logo{
 		line-height: 52px;
 		vertical-align: middle;
 	}
@@ -479,7 +476,7 @@ body{
 			height: 2px;
 			background: #d7dcde;
 		}
-		.range2{
+		.range-selected{
 			position: absolute;
 			top: 39px;
 			left: 20px;
@@ -487,8 +484,8 @@ body{
 			height: 2px;
 			background: #00ca74;
 		}
-		.min,
-		.max{
+		.min-runner,
+		.max-runner{
 			position: absolute;
 			top: 30px;
 			left: 18px;
@@ -500,7 +497,7 @@ body{
 			box-shadow: 0 2px 0 0 #cccdcd;
 			cursor: pointer;
 		}
-		.max{
+		.max-runner{
 			left: 160px;
 		}
 		
@@ -508,9 +505,6 @@ body{
 	.catalog-filter ul{
 		list-style: none;
 		padding: 0;
-	}
-	.catalog-filter li{
-		/*padding-bottom: 24px;*/
 	}
 	.catalog-filter fieldset{
 		padding: 0;
@@ -656,7 +650,7 @@ body{
 		opacity: 0.1;
 	}
 /*стилизация checkbox*/
-	.catalog-filter .btn{
+	.btn-show{
 		width: 100%;
 		padding: 16px 0;
 		font-size: 16px;
@@ -667,20 +661,20 @@ body{
 		border-radius: 3px;
 		cursor: pointer;
 	}
-	.catalog-filter .btn:hover{
+	.btn-show:hover{
 		background: #dfdfdf;
 	}
-	.catalog-filter .btn:active{
+	.btn-show:active{
 		color: rgba(0, 0, 0, 0.3);
 		background: #d5d5d5;
 		box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1)
 	}
-	.column-right{
+	.products{
 		float: right;
 		margin-top: 4px;
 		width: 760px;
 	}
-	.sort b{
+	.classify{
 		display: block;
 		float: left;
 		font-size: 18px;
@@ -707,7 +701,7 @@ body{
 	.sorting li:nth-last-child(1){
 		margin-left: 15px;
 	}
-	.sorting a{
+	.btn-sorting{
 		padding: 0;
 		font-weight: normal;
 		font-size: 14px;
@@ -716,16 +710,16 @@ body{
 		color: rgba(0, 0, 0, 0.3);
 		background: none;
 	}
-	.sorting a:hover{
+	.btn-sorting:hover{
 		color: rgba(0, 0, 0, 0.6);
 		background: none;
 	}
-	.sorting a:active{
+	.btn-sorting:active{
 		color: #000000;
 		background: none;
 		box-shadow: none;
 	}
-	.sorting .active a{
+	.active-sorting a{
 		color: #000000;
 	}
 	.cards{
@@ -773,22 +767,23 @@ body{
 		background-color: #eeeeee;
 		text-align: center;
 	}
-	.item a{
+	.item{
 		margin-bottom: 5px;
 		font-size: 18px;
+		font-weight: bold;
 		line-height: 30px;
 		text-decoration: none;
 		color: #000000;
 		text-transform: uppercase;
 	}
-	.description p{
+	.paragraph{
 		margin-bottom: 30px;
 		line-height: 20px;
 	}
-	.description .btn{
+	.btn-description{
 		padding: 16px 60px;
 	}
-	.description .btn:active{
+	.btn-description:active{
 		color: #ffffff;
 	}
 	.card:hover img{
@@ -803,7 +798,6 @@ body{
 	.card:hover::before{
 		opacity: 1;
 	}
-	
 	.page-btn{
 		display: inline-block;
 		margin-top: 24px;
@@ -830,12 +824,18 @@ body{
 	.paginator{
 		margin-bottom: 65px;
 	}
-	.paginator .active{
+	.paginator-active{
 		line-height: 44px;
 		width: 44px;
 		color: #000000;
 		background: #ffffff;
 		border: 3px solid #dbdbdb;
+		box-shadow: none;
+	}
+	.paginator-active:hover,
+	.paginator-active:active{
+		color: rgba(0, 0, 0, 1);
+		background: none;
 		box-shadow: none;
 	}
 	.next,
@@ -846,11 +846,9 @@ body{
 
 /*end main*/
 .main-footer{
-	
 }
 	.adress img{
 		margin-left: -140px;
-
 	}
 	.adress{
 		position: relative;
@@ -883,15 +881,15 @@ body{
 		margin-top: 31px;
 		padding: 16px 44px;
 	}
-	/*всплывающее окно*/
+/*всплывающее окно*/
 	.form-write-us{
 		position: fixed;
 		left: 50%;
 		bottom: 179px;
-		z-index: 2;
+		z-index: 3;
 		-webkit-transform: translate(-50%);
 		        transform: translate(-50%);
-		display: none; /* убрать чтобы увидеть, пока не активированы скрипты */
+		display: none;
 		padding-top: 73px;
 		padding-left: 100px;
 		padding-right: 100px;
@@ -900,6 +898,9 @@ body{
 		max-height: 590px;
 		background: #ffffff;
 		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+	}
+	.form-write-us-show{
+		display: block;
 	}
 	.form-write-us b{
 		font-size: 45px;
@@ -973,6 +974,7 @@ body{
 		font-size: 0;
 		background: none;
 		border: none;
+		outline: none;
 		cursor: pointer;
 	}
 	.modal-content-close::before,
@@ -1003,18 +1005,19 @@ body{
 	.modal-content-close:active::after{
 		background: #ffeeee;
 	}
-	.form-write-us .btn{
+	.write-us-btn{
 		margin-top: 45px;
 		padding: 16px 84px; 
 	}
-	/*всплывающее окно*/
-	.social-btn{
+/*всплывающее окно*/
+	.social-btns{
 		float: left;
 		margin-top: 69px;
 		margin-bottom: 69px;
 	}
-	.social-btn a{
+	.social-btn{
 		display: inline-block;
+		position: relative;
 		margin-right: 9px;
 		width: 79px;
 		height: 79px;
@@ -1022,9 +1025,6 @@ body{
 		background-color: #e1e1e1;
 		border-radius: 50%;
 		vertical-align: top;
-	}
-	.social-vk{
-		position: relative;
 	}
 	.social-vk::before{
 		content: "";
@@ -1035,9 +1035,6 @@ body{
 		height: 15px;
 		background: url(../img/sprite.png) no-repeat -10px -129px;
 	}
-	.social-fb{
-		position: relative;
-	}
 	.social-fb::before{
 		content: "";
 		position: absolute;
@@ -1046,9 +1043,6 @@ body{
 		width: 12px;
 		height: 22px;
 		background: url(../img/sprite.png) no-repeat -10px -46px;
-	}
-	.social-in{
-		position: relative;
 	}
 	.social-in::before{
 		content: "";
@@ -1059,14 +1053,14 @@ body{
 		height: 21px;
 		background: url(../img/sprite.png) no-repeat -10px -88px;
 	}
-	.social-btn a:hover{
+	.social-btn:hover{
 		background: #e74246;
 	}
-	.social-btn a:active{
+	.social-btn:active{
 		background: #d7373b;
-		box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+		box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
 	}
-	.social-btn a:active::before{
+	.social-btn:active::before{
 		content: "";
 		opacity: 0.3;
 	}
@@ -1075,13 +1069,13 @@ body{
 		margin-left: 130px;
 		margin-top: 82px;
 	}
-	.friends h3{
+	.friends-header{
 		font-size: 36px;
 		line-height: 36px;
 		padding: 0;
 		margin: 0;
 	}
-	.friends p{
+	.friends-paragraph{
 		margin-top: 10px; 
 		line-height: 22px;
 		color: #444444;
