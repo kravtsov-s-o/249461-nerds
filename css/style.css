@@ -847,11 +847,21 @@ body{
 /*end main*/
 .main-footer{
 }
-	.adress img{
-		margin-left: -140px;
-	}
 	.adress{
 		position: relative;
+		height: 416px;
+		background: url(../img/map.jpg) no-repeat 50% 0;
+	}
+	.map-container{
+		position: absolute;
+		width: 100%;
+	}
+	.adress-container{
+		position: relative;
+		width: 1160px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 54px;
 	}
 	.mark{
 		position: absolute;
@@ -859,9 +869,7 @@ body{
 		left: 820px;
 	}
 	.write-us{
-		position: absolute;
-		left: 0;
-		top: 54px;
+		display: block;
 		width: 219px;
 		height: 208px;
 		background-color:#ffffff;
