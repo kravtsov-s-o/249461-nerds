@@ -866,7 +866,7 @@ body{
 	.mark{
 		position: absolute;
 		top: 89px;
-		left: 820px;
+		right: 255px;
 	}
 	.write-us{
 		display: block;
