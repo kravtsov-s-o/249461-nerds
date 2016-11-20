@@ -895,7 +895,7 @@ body{
 /*всплывающее окно*/
 	.form-write-us{
 		position: fixed;
-		margin-left: -390px;
+		margin-left: -480px;
 		left: 50%;
 		bottom: 179px;
 		z-index: 4;
