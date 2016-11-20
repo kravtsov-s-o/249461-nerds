@@ -6,6 +6,7 @@
 		var form = popup.querySelector("form");
 		var login = popup.querySelector("[name=name]");
 		var email = popup.querySelector("[name=email]");
+		var letter = popup.querySelector("[name=mail]");
 
 		var storage = localStorage.getItem("login");
 		
@@ -28,13 +29,22 @@
 			});
 		
 			form.addEventListener("submit", function(event) {
-				if (!login.value||!email.value) {
+				if (!login.value||!email.value||!mail.value) {
 					event.preventDefault();
 					popup.classList.remove("form-write-us-error");
 					popup.offsetWidth = popup.offsetWidth;
 					popup.classList.add("form-write-us-error");
 				} else {
 					localStorage.setItem("login", login.value);
+				}
+			});
+
+			form.addEventListener("submit", function(event) {
+			if (!login.value || !email.value || !letter.value){
+				    event.preventDefault();
+					login.classList.add("error");
+					email.classList.add("error");
+					letter.classList.add("letter-error");
 				}
 			});
 

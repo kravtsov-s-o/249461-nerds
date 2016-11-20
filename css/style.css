@@ -997,9 +997,7 @@ body{
 		border: 2px solid #000000;
 		outline: none;
 	}
-	.form-write-us input[type="text"]:invalid,
-	.form-write-us input[type="email"]:invalid,
-	.form-write-us textarea:invalid{
+	.form-error{
 		color: #e74246;
 		border: 2px solid #e74246;
 	}
