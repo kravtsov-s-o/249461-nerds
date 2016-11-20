@@ -34,17 +34,11 @@
 					popup.classList.remove("form-write-us-error");
 					popup.offsetWidth = popup.offsetWidth;
 					popup.classList.add("form-write-us-error");
+					/*login.classList.add("form-error");
+					email.classList.add("form-error");
+					letter.classList.add("form-error");*/
 				} else {
 					localStorage.setItem("login", login.value);
-				}
-			});
-
-			form.addEventListener("submit", function(event) {
-			if (!login.value || !email.value || !letter.value){
-				    event.preventDefault();
-					login.classList.add("error");
-					email.classList.add("error");
-					letter.classList.add("letter-error");
 				}
 			});
 
