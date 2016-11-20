@@ -1,5 +1,5 @@
 		var link = document.querySelector(".write");
-
+		
 		var popup = document.querySelector(".form-write-us");
 		var close = document.querySelector(".modal-content-close");
 
@@ -14,35 +14,35 @@
 				event.preventDefault();
 				popup.classList.add("form-write-us-show");
 				if (storage) {
-		        	login.value = storage;
+					login.value = storage;
 					email.focus();
 				} else {
 					login.focus();
 				}
 			});
-
+			
 			close.addEventListener("click", function(event) {
 				event.preventDefault();
 				popup.classList.remove("form-write-us-show");
+				popup.classList.remove("form-write-us-error");
 			});
 		
 			form.addEventListener("submit", function(event) {
-				event.preventDefault();
+				if (!login.value||!email.value) {
+					event.preventDefault();
+					popup.classList.remove("form-write-us-error");
+					popup.offsetWidth = popup.offsetWidth;
+					popup.classList.add("form-write-us-error");
+				} else {
+					localStorage.setItem("login", login.value);
+				}
 			});
-
-
-			form.addEventListener("submit", function(event) {
-		        if (!login.value) {
-		          event.preventDefault();
-		        } else {
-		          localStorage.setItem("login", login.value);
-		        }
-		      });
 
 			window.addEventListener("keydown", function(event) {
 				if (event.keyCode === 27) {
 					if (popup.classList.contains("form-write-us-show")) {
 						popup.classList.remove("form-write-us-show");
+						popup.classList.remove("form-write-us-error");
 					}
 				}
 			});
