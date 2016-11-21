@@ -262,7 +262,7 @@ body {
 }
 /*end header*/
 
-.main .services {
+.services {
     padding-bottom: 80px;
 }
 .services-ell {
@@ -446,53 +446,6 @@ body {
     float: left;
     width: 260px;
 }
-/*ранжировка цен*/
-
-.range-price {
-    margin-top: 45px;
-    margin-bottom: 14px;
-}
-.background {
-    position: relative;
-    width: 260px;
-    height: 80px;
-    background: #eeeeee;
-    border-radius: 2px;
-}
-.range {
-    position: absolute;
-    top: 39px;
-    left: 20px;
-    width: 220px;
-    height: 2px;
-    background: #d7dcde;
-}
-.range-selected {
-    position: absolute;
-    top: 39px;
-    left: 20px;
-    width: 151px;
-    height: 2px;
-    background: #00ca74;
-}
-.min-runner,
-.max-runner {
-    position: absolute;
-    top: 30px;
-    left: 18px;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: #ababab;
-    border: 8px solid #ffffff;
-    box-shadow: 0 2px 0 0 #cccdcd;
-    cursor: pointer;
-}
-.max-runner {
-    left: 160px;
-}
-/*ранжировка цен*/
-
 .catalog-filter ul {
     list-style: none;
     padding: 0;
@@ -510,20 +463,68 @@ body {
     font-weight: bold;
     text-transform: uppercase;
 }
-.catalog-filter input[type="text"] {
-	width: 80px;
-    height: 38px;
-    margin-left: 11px;
+.range-filter {
+    width: 260px;
+}
+.range-controls {
+    position: relative;
+    height: 41px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 15px;
     border-radius: 2px;
-    border: none;
-    background-color: #eeeeee;
+    background: #eeeeee;
+}
+.range-controls .scale {
+    height: 2px;
+    background: #d7dcde;
+}
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background: #00ca74;
+}
+.range-controls .toggle {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 4px;
+    height: 4px;
+    cursor: pointer;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+.range-controls .toggle-min {
+    left: 20px;
+}
+.range-controls .toggle-max {
+    left: 165px;
+}
+.price-controls {
+    font-size: 0;
+}
+.price-controls label {
+    font-size: 16px;
+    display: inline-block;
+    width: 50%;
+}
+.max-price {
+    text-align: right;
+}
+.price-controls input {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    width: 60px;
+    margin-left: 10px;
+    padding: 9px 10px;
     text-align: center;
-}
-.catalog-filter input[type="text"]:first-of-type {
-    margin-right: 18px;
-}
-.catalog-filter input[type="text"]:last-of-type {
-    float: right;
+    color: #283136;
+    border: none;
+    border-radius: 3px;
+  background: #eeeeee;
 }
 /*стилизация radio*/
 

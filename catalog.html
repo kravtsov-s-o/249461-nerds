@@ -45,7 +45,7 @@
 				<form action="#" method="get">
 					<fieldset>
 						<legend>Стоимость:</legend>
-							<div class="range-price">
+							<!--<div class="range-price">
 								<div class="background">
 									<div class="range"></div>
 									<div class="range-selected"></div>
@@ -53,8 +53,23 @@
 									<div class="max-runner"></div>
 								</div>
 							</div>
-						<label for="min-price">ОТ </label><input type="text" name="min-price" id="min-price" value="0">
-						<label for="max-price"> ДО </label><input type="text" name="max-price" id="max-price" value="15000">
+						<div class="price-controls">
+							<label for="min-price">ОТ <input type="text" name="min-price" id="min-price" value="0"></label>
+							<label for="max-price"> ДО <input type="text" name="max-price" id="max-price" value="15000"></label>
+						</div>-->
+							<div class="range-filter">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
+								</div>
+								<div class="price-controls">
+									<label class="min-price">ОТ <input name="min-price" type="text" value="0"></label>
+									<label class="max-price">ДО <input name="max-price" type="text" value="15000"></label>
+								</div>
+							</div>
 					</fieldset>
 					<fieldset>
 						<legend>Сетка:</legend>
