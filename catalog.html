@@ -59,19 +59,35 @@
 					<fieldset>
 						<legend>Сетка:</legend>
 						<ul>
-							<li><input type="radio" name="grid" value="adaptive" id="adaptive" checked> <label for="adaptive">Адаптивный</label></li>
-							<li><input type="radio" name="grid" value="fixed" id="fixed"> <label for="fixed">Фиксированная</label></li>
-							<li><input type="radio" name="grid" value="rubber" id="rubber"> <label for="rubber">Резиновая</label></li>
+							<li>
+								<input type="radio" name="grid" value="adaptive" id="adaptive" checked> <label for="adaptive">Адаптивный</label>
+							</li>
+							<li>
+								<input type="radio" name="grid" value="fixed" id="fixed"> <label for="fixed">Фиксированная</label>
+							</li>
+							<li>
+								<input type="radio" name="grid" value="rubber" id="rubber"> <label for="rubber">Резиновая</label>
+							</li>
 						</ul>
 					</fieldset>
 					<fieldset>
 						<legend>Особенности:</legend>
 						<ul>
-							<li><input type="checkbox" name="slider" id="slider" checked> <label for="slider"> Слайдер</label></li>
-							<li><input type="checkbox" name="block" id="block"> <label for="block"> Блок преимущество</label></li>
-							<li><input type="checkbox" name="news" id="news" checked> <label for="news"> Новости</label></li>
-							<li><input type="checkbox" name="gallery" id="gallery"> <label for="gallery"> Галерея</label></li>
-							<li><input type="checkbox" name="basket" id="basket"> <label for="basket"> Корзина</label></li>
+							<li>
+								<input type="checkbox" name="slider" id="slider" checked> <label for="slider"> Слайдер</label>
+							</li>
+							<li>
+								<input type="checkbox" name="block" id="block"> <label for="block"> Блок преимущество</label>
+							</li>
+							<li>
+								<input type="checkbox" name="news" id="news" checked> <label for="news"> Новости</label>
+							</li>
+							<li>
+								<input type="checkbox" name="gallery" id="gallery"> <label for="gallery"> Галерея</label>
+							</li>
+							<li>
+								<input type="checkbox" name="basket" id="basket"> <label for="basket"> Корзина</label>
+							</li>
 						</ul>
 					</fieldset>
 					<button class="btn btn-show" type="submit">Показать</button>
@@ -81,11 +97,21 @@
 				<div class="sort clearfix">
 					<b class="classify">Сортировать:</b>
 					<ul class="sorting">
-						<li class="active-sorting"><a class="btn btn-sorting">По цене</a></li>
-						<li><a class="btn btn-sorting" href="#">По типу</a></li>
-						<li><a class="btn btn-sorting" href="#">По названию</a></li>
-						<li class="active-sorting"><a class="btn btn-sorting">&#9660;</a></li>
-						<li><a class="btn btn-sorting" href="#">&#9650;</a></li>
+						<li class="active-sorting">
+							<a class="btn btn-sorting">По цене</a>
+						</li>
+						<li>
+							<a class="btn btn-sorting" href="#">По типу</a>
+						</li>
+						<li>
+							<a class="btn btn-sorting" href="#">По названию</a>
+						</li>
+						<li class="active-sorting">
+							<a class="btn btn-sorting">&#9660;</a>
+						</li>
+						<li>
+							<a class="btn btn-sorting" href="#">&#9650;</a>
+						</li>
 					</ul>
 				</div>
 				<div class="cards">
@@ -155,34 +181,34 @@
 			<div class="container adress-container">
 				<div class="marker"></div>
 				<div class="write-us">
-						<b>NËRDS DESIGN STUDIO</b>
-						<p>191186, Санкт-Петербург,<br>
-							ул. Б.Конюшенная, д. 19/8<br>
-							<br>
-							тел. +7 (812) 275-75-75</p>
-						<a class="btn write" href="form.html">НАПИШИТЕ НАМ</a>
-					</div>
-					<!--всплывающее окно-->
-					<div class="form-write-us">
-						<b>Напишите нам</b>
-						<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-						<form action="#" method="post">
-							<div class="left">
-								<label for="name">Ваше имя:</label>
-								<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" tabindex="1">
-							</div>
-							<div class="left">
-								<label for="email">Ваш e-mail:</label>
-								<input type="text" name="email" id="email" placeholder="Для отправки ответа"  tabindex="2" >
-							</div>
-							<div class="text">
-								<label for="mail">Текст письма:</label>
-								<textarea name="mail" id="mail" placeholder="В свободной форме"  tabindex="3"></textarea>
-							</div>
-							<button class="btn write-us-btn" type="submit">Отправить</button>
-						</form>
-					</div>
-					<!--всплывающее окно-->
+					<b>NËRDS DESIGN STUDIO</b>
+					<p>191186, Санкт-Петербург,<br>
+						ул. Б.Конюшенная, д. 19/8<br>
+						<br>
+						тел. +7 (812) 275-75-75</p>
+					<a class="btn write" href="form.html">НАПИШИТЕ НАМ</a>
+				</div>
+				<!--всплывающее окно-->
+				<div class="form-write-us">
+					<b>Напишите нам</b>
+					<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+					<form action="#" method="post">
+						<div class="left">
+							<label for="name">Ваше имя:</label>
+							<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" tabindex="1">
+						</div>
+						<div class="left">
+							<label for="email">Ваш e-mail:</label>
+							<input type="text" name="email" id="email" placeholder="Для отправки ответа"  tabindex="2" >
+						</div>
+						<div class="text">
+							<label for="mail">Текст письма:</label>
+							<textarea name="mail" id="mail" placeholder="В свободной форме"  tabindex="3"></textarea>
+						</div>
+						<button class="btn write-us-btn" type="submit">Отправить</button>
+					</form>
+				</div>
+				<!--всплывающее окно-->
 			</div>
 		</div>
 		<div class="container">

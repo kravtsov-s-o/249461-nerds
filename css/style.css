@@ -262,7 +262,7 @@ body {
 }
 /*end header*/
 
-.main {} .services {
+.main .services {
     padding-bottom: 80px;
 }
 .services-ell {
@@ -838,7 +838,7 @@ body {
 }
 /*end main*/
 
-.main-footer {} .adress {
+.main-footer .adress {
     position: relative;
     height: 416px;
     background: url(../img/map.jpg) no-repeat 50% 0;
